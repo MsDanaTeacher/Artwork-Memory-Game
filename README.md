@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Project name:
+Art Matching Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Wireframe:
 
-## Available Scripts
+https://www.figma.com/file/kEMBCaQiKTJOQ3KKMcojh2/Art-Matching-Game?node-id=0%3A1
 
-In the project directory, you can run:
+Description:
+A memory game that challenges users to find matching pairs of famous works of modern art.
 
-### `npm start`
+Level 1 is a simple picture memory game. Sixteen cards will be displayed with their images concealed. Users will need to click on two cards per round to reveal the images. When the user gets the right answer and finds a pair of matching images, the cards disappear. Mismatched cards flip back to being concealed. The goal is to find all eight matching pairs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Level 2 is a trivia round that challenges users to match the work of art with the artist. Again they will have 16 cards — half will be images, and the other half will be artist names. The goal is to find all eight matching pairs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Gallery of art: Users can create a gallery of favorite artwork using a form.
 
-### `npm test`
+Components:
+App
+NavBar
+Welcome
+LevelOne
+GameTiles
+LevelTwo
+GameTiles
+GalleryContainer
+GalleryForm
+GalleryTile
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React router routes:
+/welcome
+/level-one
+/level-two
+/gallery-container
 
-### `npm run build`
+JSON-SERVER:
+Our db-json will be using data from https://www.moma.org/collection/
+GET request will populate the matching games card
+POST request involves a form to allow users to submit their own images
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Stretch goals:
+Let users populate the game with their images from their art gallery
+Let users rate artwork with fun icons
+Custom css frills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Asana board: https://app.asana.com/0/1202840766517476/board
