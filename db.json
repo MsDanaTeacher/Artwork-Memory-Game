@@ -1,6 +1,6 @@
 
 {
-    "artwork": [  
+    "art": [  
     {  "Id":1,
         "Title":"Drowning Girl",
         "Artist":"Roy Lichtenstein",
@@ -19,7 +19,8 @@
     {   "Id":4,
         "Title":"Come to My Party (The Prince Von Thurn und Taxis Invites You For Princess Gloria's Birthday Party!)",
         "Artist":"Keith Haring",
-        "Image":"https://www.moma.org/media/W1siZiIsIjQwMDI0NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=da6e10692d6eea72"},
+        "Image":"https://www.moma.org/media/W1siZiIsIjQwMDI0NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=da6e10692d6eea72"
+    },
     {
         "Id":5,
         "Title":"Beat Bop",
