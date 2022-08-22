@@ -1,0 +1,120 @@
+
+{
+    "artwork": [  
+    {  "Id":1,
+        "Title":"Drowning Girl",
+        "Artist":"Roy Lichtenstein",
+        "Image":"https://www.moma.org/media/W1siZiIsIjIzNzM1NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=fff877e8b60326f1"
+    },
+    {   "Id":2,
+        "Title":"Airmail No. 2 Accumulation",
+        "Artist":"Yayoi Kusama",
+        "Image":"https://www.moma.org/media/W1siZiIsIjExMjI4NyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=0e83afb15efba40f"
+    },
+    {   "Id":3,
+        "Title":"Painter and Model",
+        "Artist":"Pablo Picasso",
+        "Image":"https://www.moma.org/media/W1siZiIsIjE1MTQzMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=6b5f95089ea07ecb"
+    },
+    {   "Id":4,
+        "Title":"Come to My Party (The Prince Von Thurn und Taxis Invites You For Princess Gloria's Birthday Party!)",
+        "Artist":"Keith Haring",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQwMDI0NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=da6e10692d6eea72"},
+    {
+        "Id":5,
+        "Title":"Beat Bop",
+        "Artist":"Rammellzee, K-Rob with Jean-Michel Basquiat\n",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQ1OTQxNCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=a922e4be4539370b"
+    },
+    {
+        "Id":6,
+        "Title":"Self-Portrait",
+        "Artist":"Andy Warhol",
+        "Image":"https://www.moma.org/media/W1siZiIsIjM0MjYyMiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=76e03337130c16f6"
+    },
+    {
+        "Id":7,
+        "Title":"Untitled Film Still #21",
+        "Artist":"Cindy Sherman",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQ1MDExOSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=fdb9a3c1104271fd"
+    },
+    {
+        "Id":8,
+        "Title":"Hold your Fire (Men and Machines)",
+        "Artist":"Rosalyn Drexler",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQyMTk1NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=118919b826ae362b"
+    },
+    {
+        "Id":9,
+        "Title":"Axell-ération",
+        "Artist":"Evelyne Axell",
+        "Image":"https://www.moma.org/media/W1siZiIsIjUxNDUzNSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=ad16df860447f599"
+    },
+    {
+        "Id":10,
+        "Title":"Fulang-Chang and I",
+        "Artist":"Frida Kahlo",
+        "Image":"https://www.moma.org/media/W1siZiIsIjk1MzUyIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgMjAwMHgyMDAwXHUwMDNlIl1d.jpg?sha=fe1d09f2e3e62e49"
+    },
+    {
+        "Id":11,
+        "Title":"the movement",
+        "Artist":"Marcel Dzama",
+        "Image":"https://www.moma.org/media/W1siZiIsIjE5ODE2MCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=3931bace96eed664"
+    },
+    {
+        "Id":12,
+        "Title":"Abstraction Blue",
+        "Artist":"Georgia O'Keeffe",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQ2NzUxOSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=0cc733bb8ddbc1d7"
+    },
+    {
+        "Id":13,
+        "Title":"Tar Beach Woodcut",
+        "Artist":"Faith Ringgold",
+        "Image":"https://www.moma.org/media/W1siZiIsIjE2NzY4MyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=c5ed1ced9b480c7d"
+    },
+    {
+        "Id":14,
+        "Title":"Silvered 2 (21 Reds, 21 Blues, 24 Turquoises, 24 Yellows, 9 Blacks, 8 Whites)",
+        "Artist":"Bridget Riley",
+        "Image":"https://www.moma.org/media/W1siZiIsIjM4MTUxOSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=97e7ba39da449fae"
+    },
+    {
+        "Id":15,
+        "Title":"No. 5/No. 22",
+        "Artist":"Mark Rothko",
+        "Image":"https://www.moma.org/media/W1siZiIsIjIwMzM2OSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=93b8f74e60d3e577"
+    },
+    {
+        "Id":16,
+        "Title":"Diana Ross ",
+        "Artist":"Andy Warhol",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQwMDYwNiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=24d7ee2e627d2689"
+    },
+    {
+        "Id":17,
+        "Title":"Watercolor, 4",
+        "Artist":"Sam Gilliam",
+        "Image":"https://www.moma.org/media/W1siZiIsIjMxODc5NiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=2609c661c0605e25"
+    },
+    {
+        "Id":18,
+        "Title":"Frontal Passage",
+        "Artist":"James Turrell",
+        "Image":"https://www.moma.org/media/W1siZiIsIjIyODY0NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=f24b26449f0a0adc"
+    },
+    {
+        "Id":19,
+        "Title":"Fiery Sunset",
+        "Artist":"Alma Woodsey Thomas",
+        "Image":"https://www.moma.org/media/W1siZiIsIjM0Mzk2NiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=ed11c9429f2bfdad"
+    },
+    {
+        "Id":20,
+        "Title":"The migrants arrived in great numbers",
+        "Artist":"Jacob Lawrence",
+        "Image":"https://www.moma.org/media/W1siZiIsIjMxNzIxMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=c1c2f938dcbd9507"
+        }
+]
+}
