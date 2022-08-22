@@ -27,12 +27,5 @@ export default function GalleryForm() {
       <button type="submit">Add Artwork</button>
     </form>
   </div>
-
-
-
-
-
-
-
   )
 }
