@@ -6,6 +6,6 @@ import GalleryContainer from './GalleryContainer';
 
 export default function NavBar() {
   return (
-    <div>NavBar</div>
+    <div className="navBar">NavBar</div>
   )
 }
