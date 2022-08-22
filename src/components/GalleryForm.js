@@ -3,6 +3,6 @@ import GalleryTiles from './GalleryTiles';
 
 export default function GalleryForm() {
   return (
-    <div>GalleryForm</div>
+    <div className="galleryForm">GalleryForm</div>
   )
 }

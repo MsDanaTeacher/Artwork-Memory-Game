@@ -3,6 +3,6 @@ import GalleryForm from './GalleryForm';
 
 export default function GalleryContainer() {
   return (
-    <div>GalleryContainer</div>
+    <div className="galleryContainer">GalleryContainer</div>
   )
 }

@@ -3,6 +3,6 @@ import GameTiles from './GameTiles'
 
 export default function LevelTwo() {
   return (
-    <div>LevelTwo</div>
+    <di className="levelTwo">LevelTwo</div>
   )
 }
