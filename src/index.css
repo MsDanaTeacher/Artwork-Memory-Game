@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
 
 body {
- 
+
 }
 
 .navBar {
@@ -17,4 +17,32 @@ body {
 }
 #line {
   text-align: center;
+}
+
+.levelOne {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 200px;
+}
+
+.levelTwo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 200px;
+}
+
+.gridOne {
+  padding: 10px;
+}
+
+.gridTwo {
+  padding: 10px;
+}
+
+.artTitle {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
 }
