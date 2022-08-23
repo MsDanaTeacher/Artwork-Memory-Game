@@ -18,34 +18,26 @@ function App() {
     })
   }, [])
 
-  // const shuffled = artwork.sort(() => 0.5 - Math.random())
+  //Shuffles dataset and returns the first 8 random items
+  //Ideally, we can use this function as a randomizer for both LevelOne and LevelTwo
+  const shuffledArt = artwork.sort(() => 0.5 - Math.random()).slice(0, 8)
 
-  // let selected = shuffled.slice(0, 8);
-  
-  // let duplicate = selected;
+ //Duplicates the shuffledArt array to make pairs and then randomizes the order
+  let levelOneDisplay = [...shuffledArt, ...shuffledArt]
+  .sort(() => 0.5 - Math.random())
 
-  // console.log(selected)
-  // console.log(duplicate)
-
-  // let eachSelectedArtwork= selected.map((art) => {
-  //   return <div><img key={art.Id} src={art.Image} width="200px" height="200px"/></div>
-  // })
-
-  // let eachDuplicateArtwork= duplicate.map((dupe) => {
-  //   return <div><img key={dupe.Id} src={dupe.Image} width="200px" height="200px"/></div>
-  // })
-  // let eachDuplicateArtwork= duplicate.map((copy) => {
-  //   return <img key={copy.Id} src={copy.Image} width="200px" height="200px"/>
-  // })
-
-  
   
   return (
     <div className="App">
       <NavBar />
       <Welcome />
-      <LevelOne artwork={artwork}/>
-      <LevelTwo artwork={artwork}/>
+      <LevelOne 
+        levelOneDisplay={levelOneDisplay}
+        artwork={artwork}
+        />
+      
+      {/* commenting out LevelTwo while I focus on LevelOne--AS
+      <LevelTwo artwork={artwork}/> */}
      
       
     </div>

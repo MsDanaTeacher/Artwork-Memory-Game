@@ -46,3 +46,21 @@ body {
   width: 200px;
   height: 200px;
 }
+
+.gameTiles {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  float: left;
+  margin: 2%;
+  padding: 1%;
+  transition: 0.75s;
+  opacity: 1;
+}
+
+.card-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:20px
+}
