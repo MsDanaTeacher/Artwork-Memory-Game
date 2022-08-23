@@ -36,7 +36,12 @@ function App() {
       {/* <LevelOne 
         levelOneDisplay={levelOneDisplay}
         artwork={artwork}
+<<<<<<< HEAD
         /> */}
+=======
+        setArtwork={setArtwork}
+        />
+>>>>>>> 082c3ed (stashing match logic)
       
       {/* commenting out LevelTwo while I focus on LevelOne--AS
       <LevelTwo artwork={artwork}/> */}

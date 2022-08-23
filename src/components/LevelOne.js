@@ -1,7 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import GameTiles from './GameTiles'
 
+<<<<<<< HEAD
 export default function LevelOne({ levelOneDisplay, artwork, setArtwork }) {
+=======
+export default function LevelOne({ levelOneDisplay, setArtwork, artwork}) {
+>>>>>>> 082c3ed (stashing match logic)
 
   //Setting state to track selections
   const [selectionOne, setSelectionOne] = useState(null)
@@ -21,8 +25,17 @@ export default function LevelOne({ levelOneDisplay, artwork, setArtwork }) {
   //I still need to replace the alerts with new logic
 useEffect(() => {
   if (selectionOne && selectionTwo) {
+
     if(selectionOne.Id === selectionTwo.Id) {
-      alert("matched!")
+      setArtwork(prevArt => {
+        return prevArt.map(art => {
+          if (art.Id === selectionOne.Id) {
+            return {...artwork, matched: true}
+          } else {
+            return art
+          }
+        })
+      })
       resetTurn()
     } else {
       alert("not a match")
@@ -30,6 +43,8 @@ useEffect(() => {
     }
   }
 }, [selectionOne, selectionTwo])
+
+ console.log(artwork)
 
 //This resets the selection tracker
   const resetTurn = () => {
