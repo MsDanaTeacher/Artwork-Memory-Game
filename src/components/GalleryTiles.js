@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function GalleryTiles({ newObj }) {
+export default function GalleryTiles({ newCollection }) {
 
   const newGallery = () => (
-    newObj.map((obj) => (
-      <div>
+    newCollection.map((obj) => (
+      <div key={obj.Id}>
       <img src={obj.Image} width="200px" height="200px"/>
       <h4>{obj.Title}</h4>
       <h5>{obj.Artist}</h5>
@@ -14,7 +14,7 @@ export default function GalleryTiles({ newObj }) {
   
   return (
     <div className="galleryTiles">
-      {newGallery}
+      {newGallery()}
     </div>
   )
 }

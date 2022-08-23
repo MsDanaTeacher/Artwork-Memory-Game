@@ -66,6 +66,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap:20px
+}
 .gallery-form {
   font-family: 'Josefin Slab', serif;
   font-size: 20px;
@@ -101,4 +102,12 @@ body {
   padding: 10px;
   background-color: aquamarine;
   /* font-family: 'Abril Fatface', cursive; */
+}
+
+.galleryTiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 200px;
+  margin: 10px;
 }

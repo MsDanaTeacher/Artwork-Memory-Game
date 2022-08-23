@@ -1,8 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import GalleryForm from './GalleryForm';
 import GalleryTiles from './GalleryTiles';
 
 export default function GalleryContainer() {
+
+  const [collection, setCollection] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3001/gallery')
+    .then(r => r.json())
+    .then(data => {
+      setCollection(data)
+    })
+  }, [])
+
+  console.log(collection)
   const [formData, setFormData] = useState({Title: '', Artist: '', Image: ''})
   const [newObj, setNewObj] = useState({Title: '', Artist: '', Image: ''})
 
@@ -21,7 +33,7 @@ export default function GalleryContainer() {
   return (
     <div className="galleryContainer">
       <GalleryForm handleFormChange={handleFormChange} handleFormSubmit={handleFormSubmit} formData={formData}/>
-      <GalleryTiles newObj={newObj} />
+      <GalleryTiles newCollection={collection} />
     </div>
   )
 }
