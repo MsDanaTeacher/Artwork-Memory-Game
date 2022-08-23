@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
+import { Route, Switch } from "react-router-dom";
 import NavBar from './NavBar';
-import Welcome from './Welcome';
+// import Welcome from './Welcome';
 import LevelOne from './LevelOne';
 import LevelTwo from './LevelTwo';
 import GalleryContainer from './GalleryContainer';
@@ -9,6 +10,7 @@ import GalleryForm from './GalleryForm'
 
 function App() {
   const [artwork, setArtwork] = useState([])
+  
 
   useEffect(() => {
     fetch('http://localhost:3001/art')
@@ -40,6 +42,20 @@ function App() {
       <LevelTwo artwork={artwork}/> */}
      
       
+      <Switch>
+        <Route path="/levelone">
+         <LevelOne artwork={artwork}/>
+        </Route>
+        <Route path="/leveltwo">
+          <LevelTwo artwork={artwork}/>
+        </Route>
+        <Route path="/gallery">
+          <GalleryContainer />
+        </Route>
+        {/* <Route exact path="/">
+          <Welcome />
+        </Route> */}
+      </Switch>
     </div>
   );
 }
