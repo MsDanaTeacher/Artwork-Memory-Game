@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import GameTiles from './GameTiles'
 
-<<<<<<< HEAD
-export default function LevelOne({ levelOneDisplay, artwork, setArtwork }) {
-=======
 export default function LevelOne({ levelOneDisplay, setArtwork, artwork}) {
->>>>>>> 082c3ed (stashing match logic)
 
   //Setting state to track selections
   const [selectionOne, setSelectionOne] = useState(null)

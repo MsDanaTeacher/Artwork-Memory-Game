@@ -5,8 +5,8 @@ import NavBar from './NavBar';
 import LevelOne from './LevelOne';
 import LevelTwo from './LevelTwo';
 import GalleryContainer from './GalleryContainer';
-import GameTiles from './GameTiles'
-import GalleryForm from './GalleryForm'
+// import GameTiles from './GameTiles'
+// import GalleryForm from './GalleryForm'
 
 function App() {
   const [artwork, setArtwork] = useState([])
@@ -32,24 +32,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Welcome /> */}
-      {/* <LevelOne 
-        levelOneDisplay={levelOneDisplay}
-        artwork={artwork}
-<<<<<<< HEAD
-        /> */}
-=======
-        setArtwork={setArtwork}
-        />
->>>>>>> 082c3ed (stashing match logic)
-      
-      {/* commenting out LevelTwo while I focus on LevelOne--AS
-      <LevelTwo artwork={artwork}/> */}
-     
-      
       <Switch>
         <Route path="/levelone">
-         <LevelOne artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}/>
+         <LevelOne 
+          artwork={artwork}
+          levelOneDisplay={levelOneDisplay}
+          />
         </Route>
         <Route path="/leveltwo">
           <LevelTwo artwork={artwork}/>
