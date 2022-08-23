@@ -18,3 +18,14 @@ body {
 #line {
   text-align: center;
 }
+
+.gameTiles {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+  float: left;
+  margin: 2%;
+  padding: 1%;
+  transition: 0.75s;
+  opacity: 1;
+}
