@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import GameTiles from './GameTiles'
 
-export default function LevelOne({ levelOneDisplay}) {
+export default function LevelOne({ levelOneDisplay, artwork, setArtwork }) {
 
   //Setting state to track selections
   const [selectionOne, setSelectionOne] = useState(null)
@@ -39,10 +39,12 @@ useEffect(() => {
   }
 
   return (
+
     <div className="levelOne">
       <div className="card-grid">
-
-        {levelOneDisplay.map((art) => (
+        {
+        levelOneDisplay ? "" :
+        levelOneDisplay.map((art) => (
           <GameTiles 
             key={levelOneDisplay.Id} 
             handleChoice={handleChoice}

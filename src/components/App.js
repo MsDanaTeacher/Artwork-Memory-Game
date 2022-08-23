@@ -32,11 +32,11 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Welcome />
-      <LevelOne 
+      {/* <Welcome /> */}
+      {/* <LevelOne 
         levelOneDisplay={levelOneDisplay}
         artwork={artwork}
-        />
+        /> */}
       
       {/* commenting out LevelTwo while I focus on LevelOne--AS
       <LevelTwo artwork={artwork}/> */}
@@ -44,7 +44,7 @@ function App() {
       
       <Switch>
         <Route path="/levelone">
-         <LevelOne artwork={artwork}/>
+         <LevelOne artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}/>
         </Route>
         <Route path="/leveltwo">
           <LevelTwo artwork={artwork}/>

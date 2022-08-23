@@ -116,5 +116,27 @@
         "Artist":"Jacob Lawrence",
         "Image":"https://www.moma.org/media/W1siZiIsIjMxNzIxMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=c1c2f938dcbd9507"
         }
+],
+"gallery": [  
+    {  "Id":1,
+        "Title":"Drowning Girl",
+        "Artist":"Roy Lichtenstein",
+        "Image":"https://www.moma.org/media/W1siZiIsIjIzNzM1NSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=fff877e8b60326f1"
+    },
+    {   "Id":2,
+        "Title":"Airmail No. 2 Accumulation",
+        "Artist":"Yayoi Kusama",
+        "Image":"https://www.moma.org/media/W1siZiIsIjExMjI4NyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=0e83afb15efba40f"
+    },
+    {   "Id":3,
+        "Title":"Painter and Model",
+        "Artist":"Pablo Picasso",
+        "Image":"https://www.moma.org/media/W1siZiIsIjE1MTQzMSJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=6b5f95089ea07ecb"
+    },
+    {   "Id":4,
+        "Title":"Come to My Party (The Prince Von Thurn und Taxis Invites You For Princess Gloria's Birthday Party!)",
+        "Artist":"Keith Haring",
+        "Image":"https://www.moma.org/media/W1siZiIsIjQwMDI0NCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=da6e10692d6eea72"
+    }
 ]
 }
