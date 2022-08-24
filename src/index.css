@@ -61,6 +61,16 @@ body {
   opacity: 1;
 }
 
+
+.gameTiles .art-card {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+
+.flipped .art-card {
+  transform: rotateY(0deg)
+}
+
 .card-grid {
   margin-top: 40px;
   display: grid;
@@ -111,3 +121,4 @@ body {
   width: 200px;
   margin: 10px;
 }
+
