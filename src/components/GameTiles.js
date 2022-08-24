@@ -19,14 +19,14 @@ export default function GameTiles({art, handleChoice, flipped}) {
         width="200px" height="200px" 
         alt="art-card" 
         />
-        <img
+        <div 
         onClick={handleClick}
-        src="https://image.shutterstock.com/image-photo/black-paper-texture-background-260nw-1196650255.jpg"
         className='blank-card'
         alt="blank-card"
-        width="200px" height="200px" 
+     
+        width="200px" height="200px"
         >
-        </img>
+        </div>
     </div>
     </div>
   )

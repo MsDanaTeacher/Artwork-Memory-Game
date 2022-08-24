@@ -24,9 +24,9 @@ export default function LevelOne() {
   
   const artRandomizer = () => {
     let shuffledArt = []
-    if (artwork.length > 4) {
+    if (artwork.length > 6) {
       shuffledArt.length = 0;
-      const levelOneArray = artwork.sort(() => Math.random() -0.5).splice(0, 4)
+      const levelOneArray = artwork.sort(() => Math.random() -0.5).splice(0, 6)
       shuffledArt = [...levelOneArray, ...levelOneArray]
         .sort(() => Math.random() -0.5)
         .map((art) => ({...art, id: Math.random()}))  
@@ -87,7 +87,6 @@ useEffect(() => {
             handleChoice={handleChoice}
             art={art} 
             flipped={art === selectionOne || art === selectionTwo || art.matched}
-            // matched={matched}
           />
         ))
       }

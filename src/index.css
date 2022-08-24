@@ -26,7 +26,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  width: 200px;
+  margin-left: 100px;
+  /* width: 200px; */
+  justify-content: end;
 }
 
 .levelTwo {
@@ -37,7 +39,7 @@ body {
 }
 
 .gridOne {
-  padding: 10px;
+  padding: 5px;
 }
 
 .gridTwo {
@@ -59,6 +61,7 @@ body {
   padding: 1%;
   transition: 0.75s;
   opacity: 1;
+  justify-content: center;
 }
 
 
@@ -75,7 +78,9 @@ body {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap:20px
+  grid-gap:20px;
+  justify-content: space-around;
+
 }
 .gallery-form {
   font-family: 'Josefin Slab', serif;
@@ -120,5 +125,14 @@ body {
   grid-template-rows: repeat(4, 1fr);
   width: 200px;
   margin: 10px;
+}
+
+.blank-card {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: rgb(13, 59, 88);
+  /* border: 1px solid grey; */
 }
 
