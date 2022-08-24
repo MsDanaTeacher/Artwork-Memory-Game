@@ -10,11 +10,11 @@ export default function LevelTwo({ artwork }) {
   let duplicate = selected;
 
   let eachSelectedArtwork= selected.map((art) => {
-    return <div className="gridTwo"><img key={art.Id} src={art.Image} width="200px" height="200px"/></div>
+    return <div className="gridTwo" key={art.Id}><img  src={art.Image} width="200px" height="200px"/></div>
   })
 
-  let eachArtworkTitle= duplicate.map((dupe) => {
-    return <div className="artTitle">
+  let eachArtworkTitle= duplicate.map((dupe,i) => {
+    return <div key={i} className="artTitle">
       <h4>{dupe.Artist}</h4>
       <p>{dupe.Title}</p>
       </div>

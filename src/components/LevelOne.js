@@ -3,47 +3,41 @@ import GameTiles from './GameTiles'
 
 export default function LevelOne() {
   const [artwork, setArtwork] = useState([])
-  // const [levelOne, setLevelOne] =useState([])
- 
   const [selectionOne, setSelectionOne] = useState(null)
   const [selectionTwo, setSelectionTwo] = useState(null)
   const [turns, setTurns] = useState(0)
-  // const [matched, setMatched] = useState(true)
+  const [randomize, setRandomize] = useState(false)
+  const [restart, setRestart] = useState(false)
 
   useEffect(() => {
     fetch('http://localhost:3001/art')
     .then(r => r.json())
-    .then(data => {
-      setArtwork(data)
-    // .then(setTurns(0))
-    // .then(setArtwork())
-
+    .then(artwork => {
+      setArtwork(artwork)
+      setRandomize(true)
     }) 
-  }, [])
+  }, [restart])
 
+  useEffect(() => {
+    if (randomize) artRandomizer()
+  }, [randomize])
+  
   const artRandomizer = () => {
-    const levelOneArray = artwork.sort(() => Math.random() -0.5).slice(0, 4)
-    const shuffledArt = [...levelOneArray, ...levelOneArray]
-      .sort(() => Math.random() -0.5)
-      .map((art) => ({...art, id: Math.random()}))
-
-      setArtwork(shuffledArt)
-      setTurns(0)
+    let shuffledArt = []
+    if (artwork.length > 4) {
+      shuffledArt.length = 0;
+      const levelOneArray = artwork.sort(() => Math.random() -0.5).splice(0, 4)
+      shuffledArt = [...levelOneArray, ...levelOneArray]
+        .sort(() => Math.random() -0.5)
+        .map((art) => ({...art, id: Math.random()}))  
+        setArtwork(shuffledArt)
+        setTurns(0)
+    }
   }
 
-  // const artRandomizer = () => {
-  //   const shuffledArt = artwork.sort(() => 0.5 - Math.random())
-  //     let shuffledLevelOne = shuffledArt.slice(0, 8)
-  //     let duplicates = [...shuffledLevelOne, ...shuffledLevelOne]
-  //       .sort(() => 0.5 - Math.random())
-
-  // setArtwork(duplicates)
-  //   setTurns(0)
-  // }
-
   const handleChoice = (art) => {
-    console.log(art)
     selectionOne ? setSelectionTwo(art) : setSelectionOne(art)
+    console.log(artwork)
   } 
 
 useEffect(() => {
@@ -76,17 +70,20 @@ useEffect(() => {
     setTurns(prevTurns => prevTurns + 1)
   }
 
-
+  let handleNewGame = () => {
+    setRestart(prev=>!prev)
+    setRandomize(prev=>!prev)
+  }
   return (
 
     <div className="levelOne">
       <div>
-      <button onClick={artRandomizer}>New Game</button>
+      <button onClick={handleNewGame}>New Game</button>
       </div>
       <div className="card-grid">
-        {artwork.map((art) => (
+        {artwork.map((art,i) => (
           <GameTiles 
-            key={artwork.Id} 
+            key={i} 
             handleChoice={handleChoice}
             art={art} 
             flipped={art === selectionOne || art === selectionTwo || art.matched}
