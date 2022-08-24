@@ -14,7 +14,9 @@ export default function GameTiles({art, handleChoice}) {
         src={Image}
         onClick={handleClick}
         width="200px" height="200px" 
-        alt="card front" />
+        alt="card front" 
+        // style={matched ? {color: 'black'} : null} 
+        />
     
     </div>
   )
