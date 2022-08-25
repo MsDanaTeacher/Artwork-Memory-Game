@@ -5,6 +5,9 @@ import LevelOne from './LevelOne';
 import LevelTwo from './LevelTwo';
 import GalleryContainer from './GalleryContainer';
 import ArtLibrary from './ArtLibrary'
+import GameTiles from './GameTiles'
+import GalleryForm from './GalleryForm'
+
 
 function App() {
   const [artwork, setArtwork] = useState([])
@@ -29,21 +32,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Welcome /> */}
-      {/* <LevelOne 
-        levelOneDisplay={levelOneDisplay}
-        artwork={artwork}
-        /> */}
-      
-      {/* commenting out LevelTwo while I focus on LevelOne--AS
-      <LevelTwo artwork={artwork}/> */}
-     
-      
       <Switch>
         <Route path="/levelone">
          <LevelOne 
          //artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}
          />
+
         </Route>
         <Route path="/leveltwo">
           <LevelTwo 
