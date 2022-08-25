@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import { Route, Switch } from "react-router-dom";
 import NavBar from './NavBar';
-// import Welcome from './Welcome';
 import LevelOne from './LevelOne';
 import LevelTwo from './LevelTwo';
 import GalleryContainer from './GalleryContainer';
-// import GameTiles from './GameTiles'
-// import GalleryForm from './GalleryForm'
+import ArtLibrary from './ArtLibrary'
+import GameTiles from './GameTiles'
+import GalleryForm from './GalleryForm'
+
 
 function App() {
   const [artwork, setArtwork] = useState([])
@@ -28,19 +29,23 @@ function App() {
   let levelOneDisplay = [...shuffledArt, ...shuffledArt]
   .sort(() => 0.5 - Math.random())
 
-  
   return (
     <div className="App">
       <NavBar />
       <Switch>
         <Route path="/levelone">
          <LevelOne 
-          artwork={artwork}
-          levelOneDisplay={levelOneDisplay}
-          />
+         //artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}
+         />
+
         </Route>
         <Route path="/leveltwo">
-          <LevelTwo artwork={artwork}/>
+          <LevelTwo 
+          artwork={artwork} 
+          />
+        </Route>
+        <Route path="/artlibrary">
+          <ArtLibrary artwork={artwork}/>
         </Route>
         <Route path="/gallery">
           <GalleryContainer />
