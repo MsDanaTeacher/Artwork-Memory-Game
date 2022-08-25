@@ -48,12 +48,13 @@ body {
   justify-content: center;
 }
 
-
+/* as the default, our images are hidden by being rotated 90 degrees*/
 .gameTiles .art-card {
   transform: rotateY(90deg);
   position: absolute;
 }
 
+/*when an image container is clicked, it flips the image to normal 0 degrees*/
 .flipped .art-card {
   transform: rotateY(0deg)
 }
@@ -162,7 +163,7 @@ body {
 
   /* flex-wrap: wrap;
   align-items: center; */
-}
+
 
 .gridTwo {
   padding: 10px;
