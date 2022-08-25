@@ -33,6 +33,7 @@ let rendering = mixedArray.map((arr, i) => (
  
  let shuffledRender = rendering.sort(() => 0.5 - Math.random())
 
+
   return (
     <div className="levelTwo">
        {shuffledRender}

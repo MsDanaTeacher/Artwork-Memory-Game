@@ -1,65 +1,93 @@
 import React, {useEffect, useState} from 'react'
 import GameTiles from './GameTiles'
 
-export default function LevelOne({ levelOneDisplay, setArtwork, artwork}) {
-
-  //Setting state to track selections
+export default function LevelOne() {
+  const [artwork, setArtwork] = useState([])
   const [selectionOne, setSelectionOne] = useState(null)
   const [selectionTwo, setSelectionTwo] = useState(null)
   const [turns, setTurns] = useState(0)
+  const [randomize, setRandomize] = useState(false)
+  const [restart, setRestart] = useState(false)
 
-  //Handler to track selection--
-  //For the ternary: if the user has clicked on the first image in a pair, then selectionOne = true and they can move on to make a second selection
-  //...if selectionOne = false, then whatever image they click is assigned selectionOne
+  useEffect(() => {
+    fetch('http://localhost:3001/art')
+    .then(r => r.json())
+    .then(artwork => {
+      setArtwork(artwork)
+      setRandomize(true)
+    }) 
+  }, [restart])
+
+  useEffect(() => {
+    if (randomize) artRandomizer()
+  }, [randomize])
+  
+  const artRandomizer = () => {
+    let shuffledArt = []
+    if (artwork.length > 6) {
+      shuffledArt.length = 0;
+      const levelOneArray = artwork.sort(() => Math.random() -0.5).splice(0, 6)
+      shuffledArt = [...levelOneArray, ...levelOneArray]
+        .sort(() => Math.random() -0.5)
+        .map((art) => ({...art, id: Math.random()}))  
+        setArtwork(shuffledArt)
+        setTurns(0)
+    }
+  }
+
   const handleChoice = (art) => {
-    console.log(art)
     selectionOne ? setSelectionTwo(art) : setSelectionOne(art)
+    console.log(artwork)
   } 
 
-  //Part 1 of the conditional logic:
-  //If the image id of selectionOne matches the id of selectionTwo, then it alerts "matched!"...
-  //I still need to replace the alerts with new logic
 useEffect(() => {
   if (selectionOne && selectionTwo) {
 
-    if(selectionOne.Id === selectionTwo.Id) {
+    if (selectionOne.Id === selectionTwo.Id) {
       setArtwork(prevArt => {
         return prevArt.map(art => {
           if (art.Id === selectionOne.Id) {
-            return {...artwork, matched: true}
+            return {...art, matched: true}
           } else {
             return art
           }
         })
       })
+      // alert("match!")
       resetTurn()
     } else {
-      alert("not a match")
-      resetTurn()
+      console.log("no match!")
+      setTimeout(() => resetTurn(), 1000)
     }
   }
 }, [selectionOne, selectionTwo])
 
- console.log(artwork)
 
-//This resets the selection tracker
+
   const resetTurn = () => {
     setSelectionOne(null)
     setSelectionTwo(null)
-    setTurns(prevTurns => prevTurns +1)
+    setTurns(prevTurns => prevTurns + 1)
   }
 
+  let handleNewGame = () => {
+    setRestart(prev=>!prev)
+    setRandomize(prev=>!prev)
+  }
   return (
 
     <div className="levelOne">
+      <div>
+      <button onClick={handleNewGame}>New Game</button>
+      </div>
       <div className="card-grid">
-        {
-        levelOneDisplay ? "" :
-        levelOneDisplay.map((art) => (
+        {artwork.map((art,i) => (
           <GameTiles 
-            key={levelOneDisplay.Id} 
+            key={i} 
             handleChoice={handleChoice}
-            art={art} />
+            art={art} 
+            flipped={art === selectionOne || art === selectionTwo || art.matched}
+          />
         ))
       }
       </div>

@@ -10,24 +10,29 @@ import GalleryForm from './GalleryForm'
 
 
 function App() {
-  const [artwork, setArtwork] = useState([])
+  // const [artwork, setArtwork] = useState([])
   
 
-  useEffect(() => {
-    fetch('http://localhost:3001/art')
-    .then(r => r.json())
-    .then(data => {
-      setArtwork(data)
-    })
-  }, [])
+  // useEffect(() => {
+  //   fetch('http://localhost:3001/art')
+  //   .then(r => r.json())
+  //   .then(data => {
+  //     setArtwork(data)
+  //   })
+  // }, [])
 
   //Shuffles dataset and returns the first 8 random items
   //Ideally, we can use this function as a randomizer for both LevelOne and LevelTwo
-  const shuffledArt = artwork.sort(() => 0.5 - Math.random()).slice(0, 8)
+  // const shuffledArt = artwork.sort(() => 0.5 - Math.random()).slice(0, 8)
 
  //Duplicates the shuffledArt array to make pairs and then randomizes the order
-  let levelOneDisplay = [...shuffledArt, ...shuffledArt]
-  .sort(() => 0.5 - Math.random())
+  // let duplicates = [...shuffledArt, ...shuffledArt]
+  // .sort(() => 0.5 - Math.random())
+
+  // const artRandomizer = () => {
+  //   setArtwork(duplicates)
+  //   setTurns(0)
+  // }
 
   return (
     <div className="App">
@@ -35,6 +40,16 @@ function App() {
       <Switch>
         <Route path="/levelone">
          <LevelOne 
+          // artwork={artwork}
+          // setArtwork={setArtwork}
+          // levelOneDisplay={levelOneDisplay}
+          />
+        </Route>
+        <Route path="/leveltwo">
+          <LevelTwo 
+          // artwork={artwork}
+          />
+
          //artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}
          />
 
@@ -46,6 +61,7 @@ function App() {
         </Route>
         <Route path="/artlibrary">
           <ArtLibrary artwork={artwork}/>
+
         </Route>
         <Route path="/gallery">
           <GalleryContainer />

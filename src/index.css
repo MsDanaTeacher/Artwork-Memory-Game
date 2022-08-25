@@ -26,11 +26,13 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  width: 200px;
+  margin-left: 100px;
+  /* width: 200px; */
+  justify-content: end;
 }
 
 .gridOne {
-  padding: 10px;
+  padding: 5px;
 }
 
 
@@ -43,13 +45,26 @@ body {
   padding: 1%;
   transition: 0.75s;
   opacity: 1;
+  justify-content: center;
+}
+
+
+.gameTiles .art-card {
+  transform: rotateY(90deg);
+  position: absolute;
+}
+
+.flipped .art-card {
+  transform: rotateY(0deg)
 }
 
 .card-grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap:20px
+  grid-gap:20px;
+  justify-content: space-around;
+
 }
 .gallery-form {
   font-family: 'Josefin Slab', serif;
@@ -131,6 +146,20 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   width: 200px;
+
+  margin: 10px;
+}
+
+.blank-card {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: pink;
+  border: 2px solid black;
+}
+
+
   /* flex-wrap: wrap;
   align-items: center; */
 }
@@ -173,3 +202,4 @@ body {
 *{
   /* border:1px solid red; */
 }
+
