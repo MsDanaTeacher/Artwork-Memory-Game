@@ -22,6 +22,7 @@ export default function NavBar() {
       exact
       activeStyle={{
         background: "pink",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
@@ -31,21 +32,34 @@ export default function NavBar() {
       to="leveltwo"
       exact
       activeStyle={{
-        background: "#FFDA7A",
+        background: "yellow",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
     Level II
       </NavLink>
       <NavLink
+      to="artlibrary"
+      exact
+      activeStyle={{
+        background: "#FFDA7A",
+        padding: "10px",
+      }}
+      className = "navTitles"
+    > 
+    The Collection
+      </NavLink>
+      <NavLink
       to="gallery"
       exact
       activeStyle={{
         background: "aquamarine",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
-    Gallery of Art
+    My Gallery
       </NavLink>
       </div>
       <div id="line">
