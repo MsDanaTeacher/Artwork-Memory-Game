@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab:wght@200&display=swap');
+
 
 body {
 
@@ -31,26 +31,10 @@ body {
   justify-content: end;
 }
 
-.levelTwo {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  width: 200px;
-}
-
 .gridOne {
   padding: 5px;
 }
 
-.gridTwo {
-  padding: 10px;
-}
-
-.artTitle {
-  background-color: yellow;
-  width: 200px;
-  height: 200px;
-}
 
 .gameTiles {
   display: inline;
@@ -120,10 +104,49 @@ body {
 }
 
 .galleryTiles {
+  display:flex;
+  flex-wrap:wrap;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  justify-content:center;
+  height:fit-content;
+  gap:1rem;
+}
+
+/* .tiles {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+} */
+
+.borderBox {
+  border: 2px solid black;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.frames {
+  margin: 0px;
+  margin-top: 24px;
+}
+
+.artist {
+  margin-top: 5px;
+}
+
+.cardColors {
+  background-color: 'black';
+}
+
+.levelTwo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   width: 200px;
+
   margin: 10px;
 }
 
@@ -134,5 +157,49 @@ body {
   margin-bottom: 15px;
   background-color: pink;
   border: 2px solid black;
+}
+
+
+  /* flex-wrap: wrap;
+  align-items: center; */
+}
+
+.gridTwo {
+  padding: 10px;
+}
+
+.artTitle {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  text-align:center;
+  font-family: 'Josefin Slab', serif;
+}
+
+.artTitleBlack {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+}
+
+.text {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.collectionDetails {
+  margin: 0px;
+  margin-top: 24px;
+}
+
+.artistDetails {
+  margin-top: 50px;
+}
+
+
+*{
+  /* border:1px solid red; */
 }
 
