@@ -26,7 +26,6 @@ export default function GalleryContainer() {
 
   function handleFormSubmit(e){
     e.preventDefault()
-    setNewObj({...formData, [e.target.name]: e.target.value})
     console.log(formData)
     fetch('http://localhost:3001/gallery', {
       method: 'POST',

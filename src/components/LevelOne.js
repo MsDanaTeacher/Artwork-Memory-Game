@@ -78,7 +78,7 @@ useEffect(() => {
 
     <div className="levelOne">
       <div>
-      <button onClick={handleNewGame}>New Game</button>
+      <button onClick={handleNewGame} className="buttonStyling">New Game</button>
       </div>
       <div className="card-grid">
         {artwork.map((art,i) => (

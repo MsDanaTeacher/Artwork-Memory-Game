@@ -162,7 +162,7 @@ body {
 
   /* flex-wrap: wrap;
   align-items: center; */
-}
+
 
 .gridTwo {
   padding: 10px;
@@ -203,3 +203,9 @@ body {
   /* border:1px solid red; */
 }
 
+.buttonStyling {
+  border: 2px solid pink;
+  background-color: black;
+  color: white;
+
+}

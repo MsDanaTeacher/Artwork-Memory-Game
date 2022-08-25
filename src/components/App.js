@@ -10,16 +10,16 @@ import GalleryForm from './GalleryForm'
 
 
 function App() {
-  // const [artwork, setArtwork] = useState([])
+  const [artwork, setArtwork] = useState([])
   
 
-  // useEffect(() => {
-  //   fetch('http://localhost:3001/art')
-  //   .then(r => r.json())
-  //   .then(data => {
-  //     setArtwork(data)
-  //   })
-  // }, [])
+  useEffect(() => {
+    fetch('http://localhost:3001/art')
+    .then(r => r.json())
+    .then(data => {
+      setArtwork(data)
+    })
+  }, [])
 
   //Shuffles dataset and returns the first 8 random items
   //Ideally, we can use this function as a randomizer for both LevelOne and LevelTwo
@@ -47,10 +47,8 @@ function App() {
         </Route>
         <Route path="/leveltwo">
           <LevelTwo 
-          // artwork={artwork}
+          artwork={artwork}
           />
-
-         //artwork={artwork} levelOneDisplay={levelOneDisplay} setArtwork={setArtwork}
          />
 
         </Route>
