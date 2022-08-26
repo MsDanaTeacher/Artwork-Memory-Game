@@ -46,13 +46,6 @@ function App() {
       
 <NavBar />
       <Switch>
-        <Route path="/levelone">
-         <LevelOne 
-          // artwork={artwork}
-          // setArtwork={setArtwork}
-          // levelOneDisplay={levelOneDisplay}
-          />
-        </Route>
         {/* <Route path="/leveltwo">
           <LevelTwo 
           // artwork={artwork}
@@ -68,6 +61,9 @@ function App() {
         <Route path="/artlibrary">
           <ArtLibrary artwork={artwork}/>
 
+        </Route>
+        <Route path="/levelone">
+         <LevelOne />
         </Route>
         <Route path="/gallery">
           <GalleryContainer />
