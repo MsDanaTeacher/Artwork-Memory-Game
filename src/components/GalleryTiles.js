@@ -4,10 +4,10 @@ export default function GalleryTiles({ newCollection }) {
 
   const newGallery = () => (
     newCollection.map((obj) => (
-      <div key={obj.Id}>
+      <div className="borderBox" key={obj.Title}>
       <img src={obj.Image} width="200px" height="200px"/>
-      <h4>{obj.Title}</h4>
-      <h5>{obj.Artist}</h5>
+      <h4 className="frames">{obj.Title}</h4>
+      <h5 className="artist">{obj.Artist}</h5>
       </div>
     ))
   )

@@ -18,34 +18,48 @@ export default function NavBar() {
     Welcome
       </NavLink> */}
       <NavLink
+      to="artlibrary"
+      exact
+      activeStyle={{
+        background: "#FFDA7A",
+        padding: "10px",
+      }}
+      className = "navTitles"
+    > 
+    The Collection
+      </NavLink>
+      <NavLink
       to="levelone"
       exact
       activeStyle={{
         background: "pink",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
-    Level I
+    Matching Game
       </NavLink>
-      <NavLink
+      {/* <NavLink
       to="leveltwo"
       exact
       activeStyle={{
-        background: "#FFDA7A",
+        background: "yellow",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
     Level II
-      </NavLink>
+      </NavLink> */}
       <NavLink
       to="gallery"
       exact
       activeStyle={{
         background: "aquamarine",
+        padding: "10px",
       }}
       className = "navTitles"
     > 
-    Gallery of Art
+    My Gallery
       </NavLink>
       </div>
       <div id="line">
