@@ -16,7 +16,7 @@ export default function GameTiles({art, handleChoice, flipped}) {
         src={Image}
         className="art-card"
         
-        width="200px" height="200px" 
+        width="205px" height="205px" 
         alt="art-card" 
         />
         <div 

@@ -5,7 +5,7 @@ export default function ArtLibrary({ artwork }) {
 
   return (
     <div className="galleryTiles">
-        {artwork.map(art=><GalleryCard data={art} />)}
+        {artwork.map(art=><GalleryCard key={artwork.Id} data={art} />)}
     </div>
   )
 }

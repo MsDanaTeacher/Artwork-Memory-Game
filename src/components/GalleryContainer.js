@@ -46,7 +46,11 @@ export default function GalleryContainer() {
 
   return (
     <div className="galleryContainer">
-      <GalleryForm handleFormChange={handleFormChange} handleFormSubmit={handleFormSubmit} formData={formData}/>
+      <GalleryForm 
+        handleFormChange={handleFormChange} 
+        handleFormSubmit={handleFormSubmit} 
+        formData={formData}
+        />
       <GalleryTiles newCollection={collection} />
     </div>
   )
