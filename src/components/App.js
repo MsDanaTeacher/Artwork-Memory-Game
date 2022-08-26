@@ -2,16 +2,17 @@ import React, {useEffect, useState} from 'react';
 import { Route, Switch } from "react-router-dom";
 import NavBar from './NavBar';
 import LevelOne from './LevelOne';
-import LevelTwo from './LevelTwo';
 import GalleryContainer from './GalleryContainer';
 import ArtLibrary from './ArtLibrary'
-import GameTiles from './GameTiles'
-import GalleryForm from './GalleryForm'
-
-
+// import GameTiles from './GameTiles'
+// import GalleryForm from './GalleryForm'
+// import ClassicalNavBar from './ClassicalNavBar'
+// import ClassicalLevelOne from './ClassicalLevelOne'
+// import ClassicalArtLibrary from './ClassicalArtLibrary'
+// import ClassicalGalleryContainer from './ClassicalGalleryContainer'
 function App() {
   const [artwork, setArtwork] = useState([])
-  
+  // const [buttonClick, setButtonClick] = useState(false)
 
   useEffect(() => {
     fetch('http://localhost:3001/art')
@@ -34,9 +35,16 @@ function App() {
   //   setTurns(0)
   // }
 
+  // function handleButtonClick(){
+  //   setButtonClick(buttonClick => !buttonClick)
+  //   console.log(buttonClick)
+  // }
+
   return (
     <div className="App">
-      <NavBar />
+      {/* <button onClick={handleButtonClick} className={!buttonClick ?"transitionButtonStyling" : "transitionOtherStyling"}>{!buttonClick ? "Classical" : "Modern"}</button> */}
+      
+<NavBar />
       <Switch>
         <Route path="/levelone">
          <LevelOne 
@@ -45,18 +53,18 @@ function App() {
           // levelOneDisplay={levelOneDisplay}
           />
         </Route>
-        <Route path="/leveltwo">
+        {/* <Route path="/leveltwo">
           <LevelTwo 
-          artwork={artwork}
-          />
+          // artwork={artwork}
+          /> */}
          />
 
-        </Route>
-        <Route path="/leveltwo">
+        {/* </Route> */}
+        {/* <Route path="/leveltwo">
           <LevelTwo 
           artwork={artwork} 
           />
-        </Route>
+        </Route> */}
         <Route path="/artlibrary">
           <ArtLibrary artwork={artwork}/>
 
@@ -71,5 +79,63 @@ function App() {
     </div>
   );
 }
+
+
+// {buttonClick ? 
+//   <div>
+//   <ClassicalNavBar />
+//   {/* <Switch>
+//     <Route path="/classicallevelone">
+//      <ClassicalLevelOne 
+//       />
+//     </Route>
+//     <Route path="/classicalartlibrary">
+//       <ClassicalArtLibrary artwork={artwork}/>
+
+//     </Route>
+//     <Route path="/gallery">
+//       <GalleryContainer />
+//     </Route>
+//     {/* <Route exact path="/">
+//       <Welcome />
+//     </Route> */}
+//   </Switch>
+//   </div>
+//   :
+//   <div>
+//   <NavBar />
+//   <Switch>
+//     <Route path="/levelone">
+//      <LevelOne 
+//       // artwork={artwork}
+//       // setArtwork={setArtwork}
+//       // levelOneDisplay={levelOneDisplay}
+//       />
+//     </Route>
+//     {/* <Route path="/leveltwo">
+//       <LevelTwo 
+//       // artwork={artwork}
+//       /> */}
+//      />
+
+//     {/* </Route> */}
+//     {/* <Route path="/leveltwo">
+//       <LevelTwo 
+//       artwork={artwork} 
+//       />
+//     </Route> */}
+//     <Route path="/artlibrary">
+//       <ArtLibrary artwork={artwork}/>
+
+//     </Route>
+//     <Route path="/gallery">
+//       <GalleryContainer />
+//     </Route>
+//     {/* <Route exact path="/">
+//       <Welcome />
+//     </Route> */}
+//   </Switch>
+//   </div>
+// } */}
 
 export default App;

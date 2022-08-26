@@ -28,7 +28,7 @@ export default function NavBar() {
     > 
     Level I
       </NavLink>
-      <NavLink
+      {/* <NavLink
       to="leveltwo"
       exact
       activeStyle={{
@@ -38,7 +38,7 @@ export default function NavBar() {
       className = "navTitles"
     > 
     Level II
-      </NavLink>
+      </NavLink> */}
       <NavLink
       to="artlibrary"
       exact
