@@ -9,7 +9,9 @@ export default function LevelTwoCard({data, type, turn, setTurn}) {
 
   let handleClick = () => {
     console.log(type,"clicked", data.Id)
+    
   }
+ 
 
   let renderCard = () => {
     if (type === "text"){
@@ -26,7 +28,7 @@ export default function LevelTwoCard({data, type, turn, setTurn}) {
     renderCard()
   },[])
 
-  //???
+  
   return (
     <>
       {currentState.content}

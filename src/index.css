@@ -2,7 +2,7 @@
 
 
 body {
-
+  /* height: 100vh; */
 }
 
 .navBar {
@@ -162,7 +162,7 @@ body {
 
   /* flex-wrap: wrap;
   align-items: center; */
-}
+
 
 .gridTwo {
   padding: 10px;
@@ -203,3 +203,43 @@ body {
   /* border:1px solid red; */
 }
 
+.buttonStyling {
+  /* border: 2px solid pink; */
+  background-color: black;
+  color: white;
+
+}
+
+h6 {
+  margin: 0.5em;
+}
+
+.margin {
+  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-left: 120px;
+  
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.transitionButtonStyling {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #CF6666;
+  /* font-family: 'Abril Fatface', cursive; */
+}
+
+.transitionOtherStyling {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  background-color: pink;
+  /* font-family: 'Abril Fatface', cursive; */
+}
