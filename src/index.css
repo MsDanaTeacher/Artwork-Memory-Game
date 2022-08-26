@@ -29,6 +29,7 @@ body {
   margin-left: 100px;
   /* width: 200px; */
   justify-content: end;
+  height: 100vh;
 }
 
 .gridOne {
@@ -200,7 +201,7 @@ body {
 
 
 *{
-  /* border:1px solid red; */
+  
 }
 
 .buttonStyling {
@@ -243,3 +244,4 @@ h6 {
   background-color: pink;
   /* font-family: 'Abril Fatface', cursive; */
 }
+
